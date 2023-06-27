@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <div id="start-screen">
+    <h1>Code Quiz</h1>
+    <p>Test your coding knowledge!</p>
+    <button id="start-btn">Start Quiz</button>
+
+  </div>
+
+  <div id="quiz-screen" style="display: none;">
+    <h2 id="question">Question</h2>
+    <div id="choices">
+      <button class="choice">Choice 1</button>
+      <button class="choice">Choice 2</button>
+      <button class="choice">Choice 3</button>
+      <button class="choice">Choice 4</button>
+    </div>
+    <p id="feedback"></p>
+    <div id="timer">Time: <span id="time-left"></span></div>
+  </div>
+
+  <div id="game-over-screen" style="display: none;">
+    <h2>Game Over!</h2>
+    <p>Your score: <span id="score"></span></p>
+    <form id="initials-form" novalidate>
+      <label for="initials">Enter your initials:</label>
+      <input type="text" id="initials" required>
+      <button type="submit">Save</button>
+    </form>
+    <button id="reset-btn">Reset Quiz</button>
+    <button id="reset-score">Reset Scoreboard</button>
+
+
+    <section class="scorebrd">
+    <h3>SCOREBOARD:</h3>
+    <ul id="scoreboard"></ul>
+    </section>
+  </div>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>

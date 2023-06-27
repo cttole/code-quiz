@@ -1,0 +1,135 @@
+:root {
+    --white: #fff;
+    --pink: #ff5d9e;
+    --blue: #00BFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--blue);
+    color: white;
+    
+  }
+/*        START SCREEN      */
+  #start-screen, #quiz-screen, #game-over-screen {
+    text-align: center;
+  margin-top: 150px;
+  align-items: center;
+  }
+  #start-screen  {
+font-family: monospace;
+font-size: 1.8vw;
+  }
+#start-btn{
+color: white;
+background-color: var(--pink);
+border-radius: 5px ;
+font-size: 1.3vw;
+font-family: monospace;
+}
+
+/*      QUIZ SCREEN     */
+  #quiz-screen {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  #choices {
+    margin-top: 20px;
+  }
+  
+  .choice {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color: var(--pink);
+    border-radius: 5px ;
+    font-size: large;
+  }
+  
+  #feedback {
+    margin-top: 20px;
+    
+  }
+  
+  #timer {
+    margin-top: 20px;
+    font-weight: bolder;
+  }
+  /*      GAME OVER     */
+#game-over-screen h2{
+font-size: 2vw;
+-webkit-animation: flash .7s step-start infinite;
+
+}
+  #initials-form {
+    margin-top: 20px;
+    font-size: 1.2vw;
+    padding: 20px;
+    
+  }
+  
+  #initials {
+    width: 100px;
+    background-color: lightblue;
+    border-radius: 3px;
+    font-size: 1.2vw;
+    
+  }
+  /* game over buttons */
+  
+
+#reset-btn {
+color: white;
+background-color: var(--pink);
+border-radius: 3px ;
+font-size: 1.1vw;
+font-family: monospace;
+ margin: 10px;
+
+}
+ #reset-score{
+color: white;
+background-color: var(--pink);
+border-radius: 3px ;
+font-size: 1.1vw;
+font-family: monospace;
+
+  } 
+  #initials-form button{
+color: white;
+background-color: var(--pink);
+border-radius: 3px ; 
+font-size: 1.1vw;
+font-family: monospace;
+
+ } 
+
+ @keyframes flash {
+    0% {
+      color: white;
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color: white;
+    }
+}
+
+.scorebrd{
+color: white;
+border: 5px solid black;
+background-color: var(--pink);
+border-style: inset;
+padding: 40px;
+
+text-align: center;
+}
+
+#scoreboard{
+list-style: none;
+
+}
